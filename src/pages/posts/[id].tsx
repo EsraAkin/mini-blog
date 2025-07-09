@@ -105,7 +105,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     return {
       props: { post },
     };
-  } catch (error) {
+  } catch {
     return {
       props: { post: null },
     };
