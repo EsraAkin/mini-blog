@@ -35,7 +35,7 @@ export default function NewPostPage() {
       if (!res.ok) throw new Error('Gönderme başarısız');
 
       router.push('/'); // Ana sayfaya yönlendir
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu');
     } finally {
       setLoading(false);
